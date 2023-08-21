@@ -1,0 +1,24 @@
+.top-bar-style {
+    width: 1440px;
+    height: 48px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+}
+
+.top-bar-logo{
+    padding-left: 120px;
+}
+
+.navigation-control{
+    padding-right: 120px;
+}
+
+.navigation-control-button{
+    color: #555555;
+    font-family: Manrope;
+    font-size: 14px;
+    padding-right: 40px;
+}
