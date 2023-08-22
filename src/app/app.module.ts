@@ -6,21 +6,21 @@ import { AppComponent } from './app.component';
 import { ContactPageComponent } from './modules/contact-page/contact-page.component';
 import { ContactFormComponent } from './modules/contact-page/components/contact-form/contact-form.component';
 import { HQInfoCardComponent } from './modules/contact-page/components/hq-info-card/hq-info-card.component';
-import { TopBarComponent } from './shared/components/top-bar/top-bar.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactPageComponent,
-    TopBarComponent,
-    FooterComponent,
     HQInfoCardComponent,
     ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
