@@ -4,6 +4,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 
+
 @NgModule({
   declarations: [
     FooterComponent,
