@@ -1,11 +1,49 @@
 
-<div>
+<div class="contact-form-card">
     <h1>Contact Us</h1>
+    <p>We are all cat persons, so if you got any question, drop it below and we will contact you back!</p>
 
     <form (ngSumbit)="onSubmit()">
-        <!-- <mat-form-field>
 
-        </mat-form-field> -->
+        <div class="nameMailPart">
+            <div class="horizontal-contact-field">
+                <label class="horizontal-contact-label">Your Full name</label>
+                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your name" [(ngModel)]="guestFullName">
+            </div>
+    
+            <div class="horizontal-contact-field">
+                <label class="horizontal-contact-label">Your Email</label>
+                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your mail" [(ngModel)]="guestEmail">
+            </div>
+        </div>
+
+        <hr class="devider">
+
+        <div class="locationPart">
+            <div class="cityPostalCodePart">
+                <div class="vertical-contact-field city-format-field">
+                    <label class="vertical-contact-label city-format-label">City</label>
+                    <input matInput class="vertical-contact-input city-format-input
+                    " type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestCity">
+                </div>
+
+                <div class="vertical-contact-field">
+                    <label class="vertical-contact-label">Postal Code</label>
+                    <input matInput  class="vertical-contact-input" type="text" placeholder="ex. 54658" [(ngModel)]="guestPostalCode">
+                </div>
+            </div>
+    
+
+            <div class="vertical-contact-field">
+                <label class="vertical-contact-label">Address</label>
+                <input matInput class="vertical-contact-input" type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestAddress">
+            </div>
+        </div>
+
+        <mat-form-field>
+            <label class="smelly-contact-label">Your Message</label>
+            <input matInput type="text" placeholder="Type your message" [(ngModel)]="guestMessage">
+        </mat-form-field>
     </form>
 </div>
 

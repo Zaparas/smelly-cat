@@ -1,6 +1,17 @@
 body{
-    background-color: #E1E4EA;
+    background-color: #EFF1F4;
     margin: 0px;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@font-face {
+    font-family: 'SmellyCatContactFont';
+    src: url('../../smelly-cat/src/assets/Fonts/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'SmellyCatContactFontBold';
+    src: url('../../smelly-cat/src/assets/Fonts/Manrope-Bold.ttf');
+}
