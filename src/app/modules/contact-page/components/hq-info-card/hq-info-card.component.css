@@ -3,11 +3,12 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+    padding-top: 30%;
+    padding-right: 30%;
 }
 
-.map{
-    width: 400px;
-    height: 400px;
+.contact-us-map{
+    min-height: fit-content;
 }
 
 .Location-title{
@@ -17,4 +18,5 @@
     letter-spacing: -0.17px;
     line-height: 17px;
     width: 30%;
+    padding-top: 10%;
 }

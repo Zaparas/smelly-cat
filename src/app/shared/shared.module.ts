@@ -4,11 +4,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { MaterialModule } from './material/material/material.module';
 import { FormsModule } from '@angular/forms';
+import { CatGoogleMapComponent } from './components/cat-google-map/cat-google-map.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
-    TopBarComponent
+    TopBarComponent,
+    CatGoogleMapComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     FormsModule,
     TopBarComponent,
-    MaterialModule
+    MaterialModule,
+    CatGoogleMapComponent
   ] 
 })
 export class SharedModule { }
