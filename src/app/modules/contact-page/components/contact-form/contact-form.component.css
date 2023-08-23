@@ -70,6 +70,7 @@
     line-height: 17px;
     text-align: left;
     width: 30%;
+    padding-bottom: 2%;
 }
 
 .vertical-contact-input{
@@ -93,4 +94,57 @@
 .city-format-input{
     width: 70%;
     height: 25px;
+}
+
+.pCode-format-field{
+    width: 70%;
+}
+
+.pCode-format-label{
+    width: 70%;
+}
+
+.pCode-format-input{
+    height: 25px;
+}
+
+.message-contact-field{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+}
+
+.message-contact-label{
+    color: #000000;
+    font-family: SmellyCatContactFontBold;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    line-height: 17px;
+    text-align: left;
+}
+
+.message-contact-input{
+    height: 10%;
+    color: #A0A9BA;
+    font-family: SmellyCatContactFont;
+    font-size: 16px;
+    letter-spacing: -0.23px;
+    line-height: 24px;
+    height: 100px;
+    min-height: min-content;
+    text-align: left;
+}
+
+.terms-text{
+    color: #555555;
+    font-family: Manrope;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.send-button{
+    background-color: #EF7878;
+    border-radius: 5px;
 }
