@@ -4,6 +4,15 @@
     padding-top: 10%;
 }
 
+.contact-form-greeting{
+    color: #000000;
+    font-family: SmellyCatContactFontBold;
+    font-size: 40px;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    text-align: left;
+}
+
 .nameMailPart{
     display: flex;
     flex-direction: column;
