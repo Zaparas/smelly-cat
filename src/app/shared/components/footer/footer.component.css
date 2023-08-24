@@ -6,8 +6,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* height: 174px; */
-    height: 20%;
+    height: 15%;
+    min-height: 10%;
 }
 
 .footer-middle-section{
