@@ -22,26 +22,25 @@
         <div class="locationPart">
             <div class="cityPostalCodePart">
                 <div class="vertical-contact-field city-format-field">
-                    <label class="vertical-contact-label city-format-label">City</label>
+                    <label class="vertical-contact-label city-format-label contact-label">City</label>
                     <input matInput class="vertical-contact-input city-format-input
                     " type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestCity">
                 </div>
 
                 <div class="vertical-contact-field pCode-format-field">
-                    <label class="vertical-contact-label pCode-format-label">Postal Code</label>
+                    <label class="vertical-contact-label pCode-format-label contact-label">Postal Code</label>
                     <input matInput  class="vertical-contact-input pCode-format-input" type="text" placeholder="ex. 54658" [(ngModel)]="guestPostalCode">
                 </div> 
             </div>
-    <!-- @TODO:Fix postal code css class above for input later  -->
 
             <div class="vertical-contact-field">
-                <label class="vertical-contact-label">Address</label>
-                <input matInput class="vertical-contact-input" type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestAddress">
+                <label class="vertical-contact-label contact-label">Address</label>
+                <input matInput class="vertical-contact-input address-contact-field" type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestAddress">
             </div>
         </div>
 
         <div  class="message-contact-field">
-            <label class="message-contact-label">Your Message</label>
+            <label class="message-contact-label contact-label">Your Message</label>
             <textarea matInput class="message-contact-input" placeholder="Type your message" [(ngModel)]="guestMessage"></textarea>
         </div>
         <mat-checkbox class="terms-text">I agree with the Terms & Conditions</mat-checkbox>

@@ -31,6 +31,12 @@
 .devider{
     height: 2px;
     color: #D8D8D8;
+    margin-top: 3%;
+    margin-bottom: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 .horizontal-contact-field{
@@ -94,6 +100,12 @@
 
 .city-format-field{
     width: 70%;
+    color: #000000;
+    font-family: SmellyCatContactFont;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    line-height: 17px;
+    text-align: left;
 }
 
 .city-format-label{
@@ -106,7 +118,12 @@
 }
 
 .pCode-format-field{
-    width: 70%;
+    color: #000000;
+    font-family: SmellyCatContactFont;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    line-height: 17px;
+    text-align: left;
 }
 
 .pCode-format-label{
@@ -115,6 +132,7 @@
 
 .pCode-format-input{
     height: 25px;
+    width: 95%;
 }
 
 .message-contact-field{
@@ -167,4 +185,12 @@
     letter-spacing: -0.22px;
     line-height: 27px;
     text-align: left;  
+}
+
+.address-contact-field{
+    width: 65%;
+}
+
+.contact-label{
+    padding-bottom: 3%;
 }
