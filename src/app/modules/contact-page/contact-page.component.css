@@ -1,7 +1,6 @@
 .contact-page-container{
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -11,5 +10,6 @@
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
