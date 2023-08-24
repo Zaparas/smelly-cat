@@ -146,7 +146,7 @@
 
 .terms-text{
     color: #555555;
-    font-family: Manrope;
+    font-family: SmellyCatContactFont;
     font-size: 14px;
     letter-spacing: -0.2px;
     line-height: 24px;
@@ -158,4 +158,13 @@
     border-radius: 5px;
     width: 169px;
     height: 48px;
+}
+
+.contact-form-welcome-message{
+    color: #000000;
+    font-family: SmellyCatContactFont;
+    font-size: 18px;
+    letter-spacing: -0.22px;
+    line-height: 27px;
+    text-align: left;  
 }
