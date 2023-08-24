@@ -156,4 +156,6 @@
 .send-button{
     background-color: #EF7878;
     border-radius: 5px;
+    width: 169px;
+    height: 48px;
 }
