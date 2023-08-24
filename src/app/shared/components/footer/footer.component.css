@@ -20,9 +20,6 @@
     padding-right: 10%;
 }
 
-.footer-middle-section-top{
-}
-
 .bot-bar-logo{
     padding-left: 7%;
 }
@@ -49,4 +46,8 @@
     text-align: left;
     position: fixed;
     bottom: 10px;
+}
+
+.social-media-links{
+    padding-right: 8%;
 }
