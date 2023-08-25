@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 
@@ -11,15 +11,16 @@ import { SharedModule } from 'src/app/shared/shared.module';
 })
 export class ContactFormComponent {
 
-  guestFullName: FormControl = new FormControl('');
-  guestEmail: FormControl = new FormControl('');
-  guestCity: FormControl = new FormControl('');
-  guestPostalCode: FormControl = new FormControl('');
-  guestAddress: FormControl = new FormControl('');
-  guestMessage: FormControl = new FormControl('');
-
+  contactForm = new FormGroup({
+    guestFullName: new FormControl(''),
+    guestEmail: new FormControl(''),
+    guestCity: new FormControl(''),
+    guestPostalCode: new FormControl(''),
+    guestAddress: new FormControl(''),
+    guestMessage: new FormControl('')
+  });
   
   onSubmit(){
-    // Handle Send!
+    console.log(this.contactForm.value);
   }
 }

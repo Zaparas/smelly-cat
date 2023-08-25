@@ -3,17 +3,17 @@
     <h1 class="contact-form-greeting">Contact Us</h1>
     <p class="contact-form-welcome-message">We are all cat persons, so if you got any question, drop it below and we will contact you back!</p>
 
-    <form (ngSumbit)="onSubmit()">
+    <form class="form-style" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
         <div class="nameMailPart">
             <div class="horizontal-contact-field">
                 <label class="horizontal-contact-label">Your Full name</label>
-                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your name" [(ngModel)]="guestFullName">
+                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your name" formControlName="guestFullName">
             </div>
     
             <div class="horizontal-contact-field">
                 <label class="horizontal-contact-label">Your Email</label>
-                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your mail" [(ngModel)]="guestEmail">
+                <input matInput class="horizontal-contact-input" type="text" placeholder="Type your mail" formControlName="guestEmail">
             </div>
         </div>
 
@@ -24,28 +24,29 @@
                 <div class="vertical-contact-field city-format-field">
                     <label class="vertical-contact-label city-format-label contact-label">City</label>
                     <input matInput class="vertical-contact-input city-format-input
-                    " type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestCity">
+                    " type="text" placeholder="ex. Thessaloniki" formControlName="guestCity">
                 </div>
 
                 <div class="vertical-contact-field pCode-format-field">
                     <label class="vertical-contact-label pCode-format-label contact-label">Postal Code</label>
-                    <input matInput  class="vertical-contact-input pCode-format-input" type="text" placeholder="ex. 54658" [(ngModel)]="guestPostalCode">
+                    <input matInput  class="vertical-contact-input pCode-format-input" type="text" placeholder="ex. 54658" formControlName="guestPostalCode">
                 </div> 
             </div>
 
             <div class="vertical-contact-field">
                 <label class="vertical-contact-label contact-label">Address</label>
-                <input matInput class="vertical-contact-input address-contact-field" type="text" placeholder="ex. Thessaloniki" [(ngModel)]="guestAddress">
+                <input matInput class="vertical-contact-input address-contact-field" type="text" placeholder="ex. Thessaloniki" formControlName="guestAddress">
             </div>
         </div>
 
         <div  class="message-contact-field">
             <label class="message-contact-label contact-label">Your Message</label>
-            <textarea matInput class="message-contact-input" placeholder="Type your message" [(ngModel)]="guestMessage"></textarea>
+            <textarea matInput class="message-contact-input" placeholder="Type your message" formControlNamee="guestMessage"></textarea>
         </div>
         <mat-checkbox class="terms-text">I agree with the Terms & Conditions</mat-checkbox>
+        <button mat-raised-button class="send-button" color="warn">Send!</button>
     </form>
-    <button mat-raised-button class="send-button" color="warn">Send!</button>
+    <!-- <button mat-raised-button class="send-button" color="warn">Send!</button> -->
 
 
 </div>

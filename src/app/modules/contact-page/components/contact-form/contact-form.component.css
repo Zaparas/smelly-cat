@@ -195,3 +195,10 @@
 .contact-label{
     padding-bottom: 3%;
 }
+
+.form-style{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
